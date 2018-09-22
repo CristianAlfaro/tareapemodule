@@ -1,0 +1,351 @@
+:root{
+    box-sizing: border-box;  
+    --main: #3d393985;  
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(1em);
+}
+
+html{
+    font-size: inherit;
+}
+
+*, ::before, ::after{
+    box-sizing: inherit;
+    margin: 0;
+
+}
+
+.cabezeraMain{
+    background-image: url(img/fondoVenado.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.subcontainer{
+    width: 100%;
+    background-color: var(--main);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navegador{
+    display: flex;
+    width: 80%;
+    justify-content: space-around
+}
+
+.logo{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.opciones{
+    width: 50%;
+    padding: 2em 0;
+}
+
+.opciones ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.opciones ul li{
+    list-style: none;
+    color: #ffffff;
+}
+
+.opciones ul li a{
+    color: #fddc57;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.opciones ul li a:hover{
+    color: #838282;
+}
+
+.opciones ul li.opcionhome{
+    list-style: none;
+    color: #fddc57;;
+}
+
+.cabezeraContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+}
+
+.cabezeraContainer h1.titulo{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 8em;
+    color: #fddc57;
+    font-weight: 100;
+}
+
+.cabezeraContainer h3{
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: center;
+}
+
+.subcontainer.stype1{
+    background-color: #ffffff;
+}
+
+.subcontainer.stype2{
+    background-color: #fcfbf7;
+}
+
+.containerGrid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 50%;    
+    padding: 4em 0;
+    justify-content: center;
+}
+
+.articulo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articulo h2{
+    border-left: solid 5px #fddc57;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.articulo h2 span{
+    font-weight: bold;
+}
+
+.articulo p{
+    color: #808080;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.boton{
+    background-color: transparent;
+    border: 0.5px solid #000000;
+    padding: 1em;
+}
+
+.boton.type1{
+    border-radius: 0.3em;
+    padding: 1.2em 5em;
+    color: #838282;
+    border-color: #838282;
+    text-transform: capitalize;
+}
+
+.boton.type1:hover{
+    color: #ffffff;
+    border-color: transparent;
+    background-color: #fddc57;
+}
+
+.opcionesfotos{
+    height: 9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcionesfotos.ftype1{
+    border-bottom: 0.8px solid #dfdcdc9d;
+    border-right: 0.8px solid #dfdcdc9d;
+}
+
+.opcionesfotos.ftype2{
+    border-bottom: 0.8px solid #dfdcdc9d;
+}
+
+.opcionesfotos.ftype3{
+    border-right: 0.8px solid #dfdcdc9d;
+}
+
+.opcionesfotos p{
+    padding-top: 1em;
+    color: #808080;
+}
+
+.foto{
+    width: auto;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.foto.type1{
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 13px -2px rgba(99,99,99,1);
+}
+
+.containerGrid.type2{
+    grid-auto-rows: 50%;
+    margin: auto;
+    padding: 0%;
+    text-align: -webkit-center;
+}
+
+.flexLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.flexRigth{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.fotomarco{
+    width: 100%;
+    height: 100%;
+}
+
+.marcoFoto{
+    border-top: solid 2em #fddc57;
+    width: 75%;
+    border-radius: 0.5em;
+    box-shadow: 4px 4px 13px -2px rgba(99,99,99,1);
+}
+
+.grid2{
+    grid-column-start: auto;
+    grid-column-end: span 2;
+}
+
+.usuarios{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.nombreUsuarios{
+    padding: 1em;
+    font-weight: 400;
+}
+
+.nombreUsuarios span{
+    font-weight: bold;
+}
+
+.puestoUsuarios{
+    font-weight: 400;
+    color: #aca9a9;
+    padding-bottom: 2em;    
+}
+
+.redesSociales i{
+    color: #aca9a9;
+}
+
+justify-content: center;
+.decoracion1{
+    width: 10%;
+    padding-bottom: 1em;
+}
+
+.decoracion1 hr{
+    border: solid 0.4px  #aca9a9be;
+}
+
+.estado{
+    padding-top: 2em;
+}
+
+.recursos{
+    line-height: 2em;
+    color: #aca9a9;
+    font-weight: bold;
+}
+
+.estado hr{
+    width: 95%;
+    border: 0.1em solid #fddc57;
+}
+
+.lista h6{
+    font-size: 1em;
+}
+
+.lista h6 i{
+    padding-right: 1em;
+}
+
+.lista p{
+    font-size: 1em;
+    color: #aca9a9;
+    line-height: 3em;
+    padding-left: 2em;
+    margin: 0%;
+}
+
+.marcoFoto.mtype1{
+    border: 1em solid black;
+}
+
+@media only screen and (max-width: 1150px){
+    .opciones ul{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .articulo, .containerGrid.type2, .flexLeft, .flexCenter, .estado{
+        grid-column-start: auto;
+        grid-column-end: span 2;
+    }
+
+    .articulo{
+        padding-bottom: 3em;
+        padding-top: 3em;
+        align-items: center;
+    }
+
+    .flexLeft{
+        justify-content: center;
+    }
+
+    .subcontainer.stype2{
+        background-color: #cccccc;
+    }
+
+    .logo{
+        align-items:flex-start;padding-top: 2em;
+    }
+
+
+    .cabezeraContainer h1.titulo{
+        font-size: 5em;
+        text-align: center;
+    }
+}

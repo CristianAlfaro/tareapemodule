@@ -1,0 +1,537 @@
+:root{
+    box-sizing: border-box;  
+    --main: #3d393985;  
+    --main1: #551886;  
+    --main2: #460c91ce;
+    --main3: #a72536c5;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(1em);
+}
+
+html{
+    font-size: inherit;
+}
+
+*, ::before, ::after{
+    box-sizing: inherit;
+    margin: 0;
+
+}
+
+
+
+.cabezeraMain{
+    background-image: url(img/fondoSonrisa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subcontainer{
+    width: 100%;
+    background-color: var(--main);  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4em;
+}
+
+.subcontainer.sinpadding{
+    padding-top: 0;
+}
+
+.subcontainer.fondoTransparente{
+    background-image: linear-gradient(to right, var(--main2) , var(--main3));
+}
+
+.navegador{
+    display: flex;
+    width: 80%;
+    justify-content: space-around
+}
+
+.logo{
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.opciones{
+    width: 50%;
+    padding: 2em 0;
+}
+
+.opciones ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.opciones ul li{
+    list-style: none;
+    
+
+}
+
+.opciones ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.opciones ul li a:hover{
+    color: #278cb4;
+}
+
+.cabezeraContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30em;
+}
+
+.cabezeraContainer h1.titulo{
+    text-transform: capitalize;
+    font-size: 8em;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+.cabezeraContainer h3{
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 400;
+}
+
+.subcontainer.stype1{
+    background-color: #ffffff;
+}
+
+.subcontainer.stype2{
+    background-color: #fcfbf7;
+}
+
+.subcontainer.stype2.oscura{
+    background-color: #e7e1e1;
+}
+.subcontainer.negro{
+    background-color: #13151b;
+}
+
+.containerGrid{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 50%;    
+    padding: 4em 0;
+    justify-content: center;
+}
+
+.articulo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.articulo h2{
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.subcontainer h3{
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.subcontainer h3 span{
+    font-weight: 600;
+}
+
+.articulo h2 span{
+    font-weight: bold;
+}
+
+.articulo p{
+    color: #808080;
+    text-align: justify;
+    margin-bottom: 2em;
+}
+
+.articulo p.ptype2{
+    color: #ffffff;
+}
+
+.boton{
+    background-color: transparent;
+    border: 0.5px solid #000000;
+    padding: 0.3em;
+}
+
+.boton.type1{
+    border-radius: 3em;
+    padding: 1.2em 2em;
+    color: #ffffff;
+    border-color: transparent;
+    background-color: var(--main1);
+    text-transform: capitalize;
+}
+
+.boton.type2{
+    border-radius: 3em;
+    padding: 1.2em 2em;
+    color: #ffffff;
+    border-color: #ffffff;
+    text-transform: capitalize;
+}
+
+.boton.type3{
+    margin-top: 0.5em;
+    border-radius: 3em;
+    padding: 0.9em 2em;
+    color: #000000;
+    border-color: #ffffff;
+    text-transform: capitalize;
+    background-color: #ffffff
+}
+
+.boton.type1:hover , .boton.type2:hover{
+    color: #ffffff;
+    border-color: transparent;
+    background-image: linear-gradient(to right, var(--main2) , var(--main3));
+}
+
+.opcionesfotos{
+    height: 9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcionesfotos.ftype1{
+    border-bottom: 0.8px solid #dfdcdc9d;
+    border-right: 0.8px solid #dfdcdc9d;
+}
+
+.opcionesfotos.ftype2{
+    border-bottom: 0.8px solid #dfdcdc9d;
+}
+
+.opcionesfotos.ftype3{
+    border-right: 0.8px solid #dfdcdc9d;
+}
+
+.opcionesfotos p{
+    padding-top: 1em;
+    color: #808080;
+}
+
+.foto{
+    width: auto;
+    height: 50%;
+    border-radius: 50%;
+}
+
+.foto.type1{
+    width: 100%;
+    height: 100%;
+    box-shadow: 4px 4px 13px -2px rgba(99,99,99,1);
+}
+
+.containerGrid.type2{
+    grid-auto-rows: 50%;
+    margin: auto;
+    padding: 0%;
+    text-align: -webkit-center;
+}
+
+.flexLeft{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.flexRigth{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexCenter.columna, .flexLeft.columna , .flexRigth.columna{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexCenter.total, .flexLeft.total , .flexRigth.total{
+   width: 100%;
+   padding-bottom: 4em;
+   padding-top: 4em;
+   text-align: center;
+}
+
+.fotomarco{
+    width: 100%;
+    height: 100%;
+}
+
+.marcoFoto{
+    width: 75%;
+    border-radius: 0.5em;
+    box-shadow: 4px 4px 13px -2px rgba(99,99,99,1);
+}
+
+.grid2{
+    grid-column-start: auto;
+    grid-column-end: span 2;
+}
+
+.usuarios{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.nombreUsuarios{
+    padding: 1em;
+    font-weight: 400;
+}
+
+.nombreUsuarios span{
+    font-weight: bold;
+}
+
+.puestoUsuarios{
+    font-weight: 400;
+    color: #aca9a9;
+    padding-bottom: 2em;    
+}
+
+.redesSociales i{
+    color: #aca9a9;
+}
+
+
+.decoracion1 hr{
+    border: solid 0.4px  #aca9a9be;
+}
+
+.estado{
+    padding-top: 2em;
+}
+
+.recursos{
+    line-height: 2em;
+    color: #aca9a9;
+    font-weight: bold;
+}
+
+.estado hr{
+    width: 95%;
+    border: 0.1em solid #fddc57;
+}
+
+.lista h6{
+    font-size: 1em;
+}
+
+.lista h6 i{
+    padding-right: 1em;
+}
+
+.lista p{
+    font-size: 1em;
+    color: #aca9a9;
+    line-height: 3em;
+    padding-left: 2em;
+    margin: 0%;
+}
+
+
+.marcoFoto.mtype1{
+    border: 1em solid black;
+}
+
+.subcontainer.stype2.parallax{
+    background-image: url(img/fotografia.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.containerGrid.type2 .marcoFoto{
+    margin: 1em;
+}
+
+
+.correo{
+    display: flex;
+    justify-content: center;
+    border-radius: 3em;
+    background-color: #ffffff;
+    width: auto;
+    padding: 0.3em;
+    margin-top: 2em;
+    height: 3.5em;
+}
+
+.boxfondo{
+    border: 0;
+    margin: 0%;
+    width: 30em;
+    color: #000000;
+    background-color: transparent;
+    padding-left: 2em;
+}
+
+.textoAlAire{
+    color: #cecccc;
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+
+.textoAlAire.x2{
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.textoAlAire.type2{
+    color: #ffffff;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.textoAlAire.type2  span{
+    font-weight: 600;
+}
+
+.fondo1{
+    background-image: url(img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.pantallatraslucida1{
+    background-image: linear-gradient(to right, var(--main2) , var(--main3));
+}
+
+.transparente{
+    background-color: transparent;
+    border: 1px solid #808080;
+    width: 100%;
+    padding: 1em;
+}
+
+.tatransparente{
+    background-color: transparent;
+    border: 1px solid #808080;
+    width: 100%;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.flexCenter .transparente.rigth{
+    margin-right: 1em;
+}
+
+.flexCenter .transparente.left{
+    margin-left: 1em;
+}
+
+.flexCenter a.links{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 1.5em;
+}
+
+.flexCenter a.links:hover{
+    color: #0d5470;
+}
+
+.MainContainer{
+    width: 80;
+}
+
+.superContainer{
+    padding: 6em 12em 0;
+    background-color: #551886;
+}
+
+.sociales .redes{
+    color: #cccccc;
+    font-size: 1.3em;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.sociales .redes:hover{
+    color: #0d5470;
+}
+
+.derechos{
+    color: #808080;
+    margin-bottom: 3em;
+}
+
+.derechos span{
+    color: #551886;
+}
+
+@media only screen and (max-width: 1150px){
+    .opciones ul{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .articulo, .flexLeft, .flexCenter, .estado, .marcoFoto{
+        grid-column-start: auto;
+        grid-column-end: span 2;
+    }
+
+    .articulo{
+        padding-bottom: 3em;
+        padding-top: 3em;
+        align-items: center;
+    }
+
+    .flexLeft{
+        justify-content: center;
+    }
+
+    .subcontainer.stype2{
+        background-color: #cccccc;
+    }
+
+    .logo{
+        align-items:flex-start;padding-top: 2em;
+    }
+
+
+    .cabezeraContainer h1.titulo{
+        font-size: 5em;
+        text-align: center;
+    }
+
+    .superContainer{
+        padding: 0;
+        background-color: #551886;
+    }
+}
