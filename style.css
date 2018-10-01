@@ -68,17 +68,17 @@ html{
 
 .opciones ul li{
     list-style: none;
-    
-
 }
 
 .opciones ul li a{
     text-decoration: none;
     color: #ffffff;
+    line-height: 2em;
 }
 
 .opciones ul li a:hover{
     color: #278cb4;
+    transition: all 0.3s;
 }
 
 .cabezeraContainer{
@@ -202,6 +202,7 @@ html{
     color: #ffffff;
     border-color: transparent;
     background-image: linear-gradient(to right, var(--main2) , var(--main3));
+    transition: all 0.5s;
 }
 
 .opcionesfotos{
@@ -464,6 +465,7 @@ html{
 
 .flexCenter a.links:hover{
     color: #0d5470;
+    transition: all 0.3s;
 }
 
 .MainContainer{
@@ -484,6 +486,7 @@ html{
 
 .sociales .redes:hover{
     color: #0d5470;
+    transition: all 0.5s;
 }
 
 .derechos{
@@ -493,6 +496,35 @@ html{
 
 .derechos span{
     color: #551886;
+}
+
+.submenu ul.submenulista {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    padding: 0.5em 0 0;
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenulista li{
+    line-height: 2em;
+}
+
+.opciones .submenu:hover > .submenulista{
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenulista .submenu{
+    position: relative;
+}
+
+.submenulista .submenu .submenulista.subsubmenu{
+    right: -90px;
+    top: -10px;
 }
 
 @media only screen and (max-width: 1150px){
